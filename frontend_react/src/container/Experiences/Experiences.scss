@@ -33,8 +33,17 @@
     margin-bottom: 1rem;
     cursor: pointer;
 
+    ul {
+      margin-top: 0.5rem;
+      margin-left: 1rem;
+    }
+    li {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
     h4 {
       font-weight: 500;
+      font-size: 1.1rem;
     }
 
     p {

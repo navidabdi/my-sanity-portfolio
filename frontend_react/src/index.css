@@ -11,7 +11,9 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
 }
-
+ul {
+  list-style: '✅';
+}
 * {
   box-sizing: border-box;
   padding: 0;

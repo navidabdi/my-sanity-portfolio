@@ -29,7 +29,7 @@ const Experiences = () => {
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                {experience?.works?.map((work) => (
+                {experience.works.reverse().map((work) => (
                   <>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
@@ -41,7 +41,11 @@ const Experiences = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
-                      <p className="p-text">{work.desc}</p>
+                      <ul>
+                        {work.desc.split('✅').map((des) => (
+                          <li className="p-text">{des.trim()}</li>
+                        ))}
+                      </ul>
                     </motion.div>
                   </>
                 ))}
